@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+
+  <link href="https://zuri.team/img/favicon.png" rel="icon" sizes="16x16 32x32" type="image/png">
+
+  <link rel="stylesheet" href="/fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="/css/owl.carousel.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Kenny's Resume</title>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="toggle">
+      <a href="#" class="js-menu-toggle menu-toggle">
+        <span class="icon-mode_comment text-black align-text-top">Contact</span>
+      </a>
+    </div>
+    <div class="side-inner">
+      <div class="share">
+        <h2>Get in touch</h2>
+        <form action="/resume" method="POST">
+          <input type="text" name="fname"class="form-control " placeholder="First Name*" required>
+          <input type="text" name="lname"class="form-control " placeholder="Last Name*" required>
+          <input type="email"name="email" class="form-control " placeholder="Enter your email*" required>
+          <input type="tel" class="form-control form-control-sm" name="tel"
+          placeholder="Optional telephone no">
+          <textarea class="form-control" name="subject" id="" cols="30" rows="3" placeholder="State your subject*" required></textarea>
+          <textarea class="form-control" name="message" id="" cols="30" rows="5" placeholder="Write your message*" required></textarea>
+          <input type="submit" class="btn btn-primary btn-block" value="Send">
+        </form>
+      </div>
+    </div>
+  </aside>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container d-flex justify-content-start">
+      <a class="navbar-brand" href="https://hng.tech"><img src="/img/hnglogo.png" alt="HNG" width="24" height="24"
+          class="d-inline-block align-text-top">HNG</a>
+      <div >
+        <a href="/resume" class="navbar-brand">
+          Kenny's Resume
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <%- include ("../../src/partials/_msg.ejs") %>
+
+  <main>
+    <div class="site-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <img src="/img/usableCV.jpg" alt="Kehinde's Resume" class="img-fluid rounded d-block mx-auto">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
