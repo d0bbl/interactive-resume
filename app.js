@@ -1,5 +1,4 @@
 const express = require("express");
-const morgan = require("morgan");
 require("dotenv").config({ debug: process.env.DEBUG });
 const session = require("express-session");
 const MongoStore = require('connect-mongo');
@@ -9,7 +8,6 @@ const resumeRoutes = require("./src/routes/resume.route");
 
 const app = express();
 
-app.use(morgan('dev'));
 
 // connect to mongoDB
 (async() => {
