@@ -59,7 +59,7 @@ aside, main {
   min-height: 580px; }
 
 aside {
-  width: 380px;
+  width: 50vw;
   right: 0;
   z-index: 1001;
   position: fixed;
@@ -178,7 +178,7 @@ main {
   @media only screen and (max-width:262px) {
     aside {
       width: 100vw;
-      right: 0;
+      right: 0px;
       
     }
   }
