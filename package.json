@@ -9,7 +9,7 @@
         "dev": "node server.js"
     },
     "author": "kehinde bajomo",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "connect-flash": "^0.1.1",
         "connect-mongo": "^4.5.0",
